@@ -1,0 +1,71 @@
+object pane: Tpane
+  Left = 679
+  Height = 587
+  Top = 346
+  Width = 670
+  Caption = 'ISBN'
+  ClientHeight = 587
+  ClientWidth = 670
+  LCLVersion = '1.4.4.0'
+  object button_help: TButton
+    Left = 408
+    Height = 25
+    Top = 40
+    Width = 26
+    Caption = '?'
+    TabOrder = 0
+  end
+  object button_start: TButton
+    Left = 32
+    Height = 45
+    Top = 504
+    Width = 136
+    Caption = 'Start'
+    OnClick = button_startClick
+    TabOrder = 1
+  end
+  object spin_land: TSpinEdit
+    Left = 345
+    Height = 23
+    Top = 70
+    Width = 53
+    MaxValue = 999999
+    TabOrder = 2
+  end
+  object label_isbn: TLabel
+    Left = 24
+    Height = 15
+    Top = 192
+    Width = 25
+    Caption = 'ISBN'
+    ParentColor = False
+  end
+  object label_land: TLabel
+    Left = 344
+    Height = 15
+    Top = 40
+    Width = 62
+    Caption = 'Ländercode'
+    ParentColor = False
+  end
+  object edit_isbn: TMaskEdit
+    Left = 24
+    Height = 23
+    Top = 216
+    Width = 296
+    CharCase = ecNormal
+    MaxLength = 17
+    TabOrder = 3
+    EditMask = '###-#-#####-###-a;1;_'
+    Text = '   - -     -   - '
+    SpaceChar = '_'
+  end
+  object check_spin: TCheckBox
+    Left = 409
+    Height = 19
+    Top = 71
+    Width = 110
+    Caption = 'Use custom ISBN'
+    TabOrder = 4
+  end
+end
